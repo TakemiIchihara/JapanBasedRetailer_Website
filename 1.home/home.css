@@ -1,0 +1,139 @@
+/* Styling the fonts*/
+#concept {
+    color: #FDFFFD;
+}
+#concept li {
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+/* Styling the page*/
+header {
+    background-image: url('home_IMGs/home_header_img.jpg');
+    background-position-y: 175%;
+}
+
+main {
+    margin-bottom: 20vh;
+}
+img {
+    border-radius: 16px;
+    z-index: 1;
+}
+
+#intro {
+    margin-bottom: 5vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url('../logo_icon.png');
+}
+#intro::after{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(251, 251, 248, 0.6);
+  }
+#intro p {
+    position: relative;
+    z-index: 3;
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 100%;
+}
+/*aesthetic*/
+#aesthetic img{
+    height: 500px;
+    object-fit: cover;
+}
+
+/*second_row*/
+#second_row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
+    margin-bottom: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
+}
+
+#second_row img {
+    width: 100%;
+}
+
+/*concept*/
+#concept {
+    text-align: center;
+    min-height: 0;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 100vw);
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-right: calc(50vw - 50%);
+    padding-left: calc(100vw - 50%);
+    background-color: #dca248;
+    /* ffb400 */
+}
+#top {
+    margin-left: -3%;
+}
+#concept ul {
+    list-style: none;
+    padding: unset;
+    margin: unset;
+}
+#concept li {
+    margin: 0 auto;
+    border-right: 2px solid #ddd;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1050px) {
+    main {
+        margin-bottom: 20vh;
+    }
+    #concept {
+        margin-top: 8vh;
+        margin-bottom: 8vh;
+    }
+    #second_row {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    header {
+        background-position: center;
+    }
+    #intro {
+        margin-bottom: 5vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #intro p {
+        width: 80%
+    }
+    #second_row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: unset;
+    }
+    #second_row img {
+        height: 50vh;
+        width: 100%;
+    }
+    #concept {
+        grid-row: 1/2;
+    }
+    #concept li {
+        border-left: 2px solid #ddd;
+    }
+}
+/*transition: transform 150ms cubic-bezier(1, 0.26, 0.43, 1.02);

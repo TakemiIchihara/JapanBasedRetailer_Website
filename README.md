@@ -19,3 +19,17 @@
 ## Result
 > The final website introduces Miyakawa Kagaku Shizai to the digital environment for the first time, giving the company a professional and trustworthy online presence
 > while making essential business and product information easy to access.
+<br />
+<br />
+
+<div align="center">
+
+  <img src="https://github.com/user-attachments/assets/bf50a112-fa9c-4157-8477-d9e45ebbe827" width="70%"/>
+</div>
+<br />
+<br />
+
+<!-- footer -->
+<div align="center" width="95%">
+  <img src="https://capsule-render.vercel.app/api?type=soft&height=100&color=293051&text=Takemi%20Ichihara&fontSize=16&fontColor=FFF5E6&fontAlignY=85" />
+</div>
